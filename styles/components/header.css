@@ -24,6 +24,7 @@
   left: -1em;
   top: 2.2em;
   list-style: none;
+  align-items: center;
 }
 
 .github-icon {
@@ -32,6 +33,10 @@
   width: var(--size-xl);
   border-radius: 50%;
   display: block;
+}
+
+.github-icon:hover .tooltip {
+  opacity: 0.6;
 }
 
 /* xs */
