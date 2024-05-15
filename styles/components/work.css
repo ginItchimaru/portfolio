@@ -11,7 +11,7 @@
   max-width: 60ch;
   font-size: var(--size-sm);
   color: var(--clr-green200);
-  margin: 1rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 .work-project-title {
@@ -79,7 +79,7 @@
   
   .work-description {
     font-size: var(--size-base);
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 2.5rem auto;
   }
 
   .work-project-title {
@@ -94,7 +94,6 @@
   
   .work-project-description2 {
     font-size: var(--size-base);
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -176,7 +175,6 @@
   
   .work-project-description2 {
     font-size: var(--size-xs);
-    margin-bottom: 1em;
   }
 
   .work-project:not(:last-child) {
@@ -212,10 +210,12 @@
   
   .work-description {
     font-size: var(--size-lg);
+    margin-bottom: 3rem;
   }
 
   .work-project-description1 {
     font-size: var(--size-base);
+    margin: 1.5em 0;
   }
   
   .work-project-description2 {
@@ -235,7 +235,7 @@
   
   .work-description {
     font-size: var(--size-xl);
-    margin: 2rem auto;
+    margin: 2rem auto 4rem auto;
   }
 
   .work-project-description1 {
