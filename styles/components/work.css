@@ -110,6 +110,7 @@
     'image5 content5'
     'content6 image6';
     place-items: center;
+    gap: 1rem;
   }
 
   .work-image1 {
