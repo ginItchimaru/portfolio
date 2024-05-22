@@ -1,0 +1,15 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.project div {
+  flex: 1;
+}
+
+.project-img {
+  display: block;
+  
+}
