@@ -17,7 +17,6 @@
   width: var(--size-2xl);
   height: var(--size-2xl);
   display: block;
-  border: solid 1px red;
 }
 
 .socials {
