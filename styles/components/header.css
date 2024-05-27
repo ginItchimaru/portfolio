@@ -29,18 +29,16 @@
 
 .github-icon {
   background-color: var(--clr-green800);
-  height: var(--size-xl); /* Adjust size as needed */
-  width: var(--size-xl);  /* Adjust size as needed */
+  height: var(--size-2xl); /* Adjust size as needed */
+  width: var(--size-2xl);  /* Adjust size as needed */
   border-radius: 50%;
   display: flex; /* Use flex for centering */
-  justify-content: center; /* Center the image */
-  align-items: center; /* Center the image */
   overflow: hidden; /* Hide overflow */
 }
 
-.github-icon img {
-  max-width: 100%;
-  max-height: 100%;
+.github-svg {
+  height: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -99,11 +97,6 @@
 
   .socials {
     top: 2em;
-  }
-
-  .github-icon {
-    height: var(--size-2xl);
-    width: var(--size-2xl);
   }
 } 
 
