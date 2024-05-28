@@ -3,19 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
-  margin-top: 5rem;
+  gap: 2.5rem;
+  margin-top: 4rem;
 }
 
-/* .project div {
-  flex: 1;
-} */
-
 .project-gif-wrapper {
-  /* width: 300px; */
   border: solid 3px var(--clr-cyan);
   border-radius: 1%;
   padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-gif {
@@ -25,6 +23,7 @@
 
 .project-content {
   text-align: left;
+  max-width: 600px; /* Ensure the text doesn't exceed the image width */
 }
 
 .project-title {
@@ -35,25 +34,142 @@
 }
 
 .project-discription {
-  color: var(--clr-green200);
+  color: var(--clr-light);
   font-size: var(--size-sm);
-  max-width: 60ch;
+  margin-bottom: 1.5rem;
+}
+
+.project-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
+.project-btn {
+  font-size: var(--size-xs);
 }
 
 /* xs */
-/* @media (min-width: 475px) {} */
+@media (min-width: 475px) {
+  .project {
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+
+  .project-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-discription {
+    margin-bottom: 2rem;
+  }
+}
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+  .project {
+    gap: 3.5rem;
+    margin-top: 6rem;
+  }
+
+  .project-title {
+    font-size: var(--size-2xl);
+  }
+  
+  .project-discription {
+    font-size: var(--size-base);
+  }
+
+  .project-btn-wrapper {
+    margin: 5rem auto;
+  }
+
+  .project-btn {
+    font-size: var(--size-sm);
+  }
+}
 
 /* md */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+  .project {
+    gap: 4rem;
+    margin-top: 7rem;
+  }
+
+  .project-title {
+    margin-bottom: 2rem;
+  }
+  
+  .project-discription {
+    margin-bottom: 2.5rem;
+  }
+}
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .project {
+    gap: 4.5rem;
+    margin-top: 8rem;
+  }
+
+  .project-title {
+    margin-bottom: 2.5rem;
+  }
+  
+  .project-discription {
+    margin-bottom: 3rem;
+  }
+}
 
 /* xl */
-/* @media (min-width: 1280px) {} */
+@media (min-width: 1280px) {
+  .project {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-end; /* not sure about this yet */
+  }
+
+  .project-content {
+    border: 3px solid var(--clr-cyan);
+    border-radius: 1%;
+    padding: 2rem;
+  }
+
+  .project-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-discription {
+    max-width: 60ch;
+    margin-bottom: 2rem;
+  }
+
+  .project-btn-wrapper {
+    margin: 8rem auto;
+  }
+
+  .project-btn {
+    font-size: var(--size-base);
+  }
+}
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+  .project {
+    gap: 5rem;
+    margin-top: 10rem;
+  }
+
+  .project-title {
+    font-size: var(--size-3xl);
+  }
+  
+  .project-discription {
+    font-size: var(--size-lg);
+  }
+
+  .project-btn-wrapper {
+    margin: 10rem auto;
+  }
+}
