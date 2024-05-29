@@ -127,7 +127,7 @@
   .project {
     flex-direction: row;
     gap: 4rem;
-    align-items: flex-end; /* not sure about this yet */
+    align-items: flex-end;
   }
 
   .project-content {
