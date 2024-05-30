@@ -1,6 +1,5 @@
-export const project = [
+export const projects = [
   {
-    projectName: "",
     title: "",
     paragraph: "",
     gif: "",
