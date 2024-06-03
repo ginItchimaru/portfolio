@@ -1,36 +1,42 @@
-import {projects} from '../../data/projects.js';
+import { projects } from '../../data/projects.js';
 
-const loadProject = () => {
-  const generateHTML = (title, paragraph, gif, sourceLink) => {
-    let projectsHTML = `
+export default function loadProject() {
+  // Example debugging method:
+  const projectIndex = 0; // For debugging, loading first project, replace with dynamic index as needed
+
+  if (projectIndex >= 0 && projectIndex < projects.length) {
+    const projectData = projects[projectIndex];
+    generateHTML(projectData);
+  } else {
+    console.error('Invalid project index');
+  }
+}
+
+function generateHTML({ title, paragraph, gif, sourceLink }) {
+  if (!document.querySelector('.js-project-container')) return; // Guard clause, checks if .js-project exists
+
+  const projectsHTML = `
+    <div class="project container">
       <div class="project-gif-wrapper">
-        g class="project-gif" src="${gif}" />
+        <img class="project-gif" src="${gif}" />
       </div>
-        <div class="project-content">
-          <div>
-            <h2 class="project-title">${title}</h2>
-            <p class="project-discription">
-              ${paragraph}
-            </p>
-          </div>
-          <div>
-            <h2 class="components-title project-title">Components</h2>
-            <ul class="components-list">
-
-            </ul>
-          </div>
+      <div class="project-content">
+        <div>
+          <h2 class="project-title">${title}</h2>
+          <p class="project-discription">${paragraph}</p>
+        </div>
+        <div>
+          <h2 class="components-title project-title">Components</h2>
+          <ul class="components-list">
+      
+          </ul>
         </div>
       </div>
       <div class="project-btn-wrapper">
-        <a class="project-btn btn" target="_blank" href="${sourceLink}">Source Code</a>
+        <a class="project-btn btn" href="${sourceLink}">Source Code</a>
       </div>
-    `;
-
-    document.querySelector('.js-project').innerHTML = projectsHTML;
-  };
-
-  // make switch cases for each project (1-6) use generateHTML() with parameters to generate the html
-
-};
-
-export default loadProject;
+    </div>
+  `;
+  
+  document.querySelector('.js-project-container').innerHTML = projectsHTML;
+}

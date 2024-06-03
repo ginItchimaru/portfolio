@@ -19,3 +19,5 @@ import loadProject from './utils/load-project';
 mobileNav();
 darkMode();
 lazyLoading();
+
+loadProject();
