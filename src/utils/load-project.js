@@ -13,28 +13,32 @@ export default function loadProject() {
 }
 
 function generateHTML({ title, paragraph, gif, sourceLink }) {
-  if (!document.querySelector('.js-project-container')) return; // Guard clause, checks if .js-project exists
+  // not sure if needed
+  // Guard clause, checks if .js-project-container exists
+  if (!document.querySelector('.js-project-container')) return; 
 
   const projectsHTML = `
-    <div class="project container">
+    <div class="js-project-container project container">
       <div class="project-gif-wrapper">
         <img class="project-gif" src="${gif}" />
       </div>
       <div class="project-content">
         <div>
           <h2 class="project-title">${title}</h2>
-          <p class="project-discription">${paragraph}</p>
+          <p class="project-description">
+            ${paragraph}
+          </p>
         </div>
         <div>
           <h2 class="components-title project-title">Components</h2>
           <ul class="components-list">
-      
+          
           </ul>
         </div>
       </div>
-      <div class="project-btn-wrapper">
-        <a class="project-btn btn" href="${sourceLink}">Source Code</a>
-      </div>
+    </div>
+    <div class="project-btn-wrapper">
+      <a class="project-btn btn" href="${sourceLink}" target="_blank">Source Code</a>
     </div>
   `;
   
