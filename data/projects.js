@@ -6,12 +6,12 @@ export const projects = [
     gif: "project1.gif",
     sourceLink: "https://github.com/ginItchimaru/aimTrainer"
   },
-  // {
-  //   title: "dfsgasdfsd",
-  //   paragraph: "sdfdsfdsfddssdfsdsfsdfsfdsf \
-  //     alot about varius concepts, like memory management. ",
-  //   gif: "",
-  //   sourceLink: ""
-  // },
+  {
+    title: "Virtual Chess Board",
+    paragraph: "sdfdsfdsfddssdfsdsfsdfsfdsf \
+      alot about varius concepts, like memory management. ",
+    gif: "project2.gif",
+    sourceLink: "https://github.com/ginItchimaru/chessBoard"
+  },
 ];
 
