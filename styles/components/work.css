@@ -31,6 +31,7 @@
 .work-img-wrapper::after {
   content: '';
   background-color: rgb(6, 182, 212, 0.2);
+  filter: drop-shadow(var(--clr-cyan) 0.5rem 0.5rem 1rem);
   border-radius: 1%;
   width: 100%;
   height: 100%;
@@ -38,8 +39,6 @@
   top: 0;
   left: 0;
   z-index: 1;
-  filter: drop-shadow(var(--clr-cyan) 0.5rem 0.5rem 1rem);
-  /* drop-shadow(5px 5px var(--clr-cyan)); */
   transition: background-colo 0.3s, filter 0.5s,
     border-radius 0.15s;
 }

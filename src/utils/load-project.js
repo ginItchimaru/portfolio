@@ -1,21 +1,26 @@
-import { projects } from '../../data/projects.js';
+import {projects} from '../../data/projects.js';
 
 export default function loadProject() {
-  // Example debugging method:
-  const projectIndex = 0; // For debugging, loading first project, replace with dynamic index as needed
-
-  if (projectIndex >= 0 && projectIndex < projects.length) {
-    const projectData = projects[projectIndex];
-    generateHTML(projectData);
-  } else {
-    console.error('Invalid project index');
-  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectNum = urlParams.get('project');
+    
+    if (projectNum === '1') {
+      // Pass the entire project object instead of individual properties
+      generateHTML(projects[0]);
+    }
+  
+    console.log(projects[0].title, projects[0].paragraph,
+      projects[0].gif, projects[0].sourceLink);
+  });
 }
 
-function generateHTML({ title, paragraph, gif, sourceLink }) {
-  // not sure if needed
-  // Guard clause, checks if .js-project-container exists
-  if (!document.querySelector('.js-project-container')) return; 
+function generateHTML(project) {
+  // Check if .js-project-container exists
+  const container = document.querySelector('.js-project-container');
+  if (!container) return; 
+
+  const { title, paragraph, gif, sourceLink } = project;
 
   const projectsHTML = `
     <div class="js-project-container project container">
@@ -42,5 +47,5 @@ function generateHTML({ title, paragraph, gif, sourceLink }) {
     </div>
   `;
   
-  document.querySelector('.js-project-container').innerHTML = projectsHTML;
+  container.innerHTML = projectsHTML;
 }
