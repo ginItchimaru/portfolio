@@ -6,12 +6,15 @@ export default function loadProject() {
     const projectNum = urlParams.get('project');
     
     if (projectNum === '1') {
-      // Pass the entire project object instead of individual properties
       generateHTML(projects[0]);
     }
+
+    if (projectNum === '2') {
+      generateHTML(projects[1]);
+    }
   
-    console.log(projects[0].title, projects[0].paragraph,
-      projects[0].gif, projects[0].sourceLink);
+    // console.log(projects[0].title, projects[0].paragraph,
+    //   projects[0].gif, projects[0].sourceLink);
   });
 }
 
