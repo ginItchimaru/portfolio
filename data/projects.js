@@ -1,17 +1,20 @@
 export const projects = [
   {
     title: "Aim Practice Game",
-    paragraph: "For this project I had to dive deep into c++ and learn \
-      alot about varius concepts, like memory management. ",
+    paragraph: "For this project I had to dive deep into C++ and learn \
+      alot about librarys like SFML and various concepts like memory management, \
+      animation, fullscreen mode, game textures, pointers and references.",
     gif: "project1.gif",
-    sourceLink: "https://github.com/ginItchimaru/aimTrainer"
+    sourceLink: "https://github.com/ginItchimaru/aimTrainer",
+    components: ["C++,", "SFML"]
   },
   {
     title: "Virtual Chess Board",
     paragraph: "sdfdsfdsfddssdfsdsfsdfsfdsf \
-      alot about varius concepts, like memory management. ",
+      alot about various concepts, like memory management. ",
     gif: "project2.gif",
-    sourceLink: "https://github.com/ginItchimaru/chessBoard"
+    sourceLink: "https://github.com/ginItchimaru/chessBoard",
+    components: []
   },
 ];
 

@@ -18,12 +18,22 @@ export default function loadProject() {
   });
 }
 
+function generateListItemHTML(components) {
+  let listItems = ''; // Declare with 'let'
+
+  for (let i in components) { // Declare 'i' with 'let'
+    listItems += `<li class="components-list-item">${components[i]}</li>`; // Use 'listItems' correctly
+  }
+  
+  return listItems;
+}
+
 function generateHTML(project) {
   // Check if .js-project-container exists
   const container = document.querySelector('.js-project-container');
   if (!container) return; 
 
-  const { title, paragraph, gif, sourceLink } = project;
+  const { title, paragraph, gif, sourceLink, components } = project;
 
   const projectsHTML = `
     <div class="js-project-container project container">
@@ -38,9 +48,9 @@ function generateHTML(project) {
           </p>
         </div>
         <div>
-          <h2 class="components-title project-title">Components</h2>
+          <h2 class="components-title project-title">Components / Languages</h2>
           <ul class="components-list">
-          
+            ${generateListItemHTML(components)}
           </ul>
         </div>
       </div>

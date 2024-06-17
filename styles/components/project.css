@@ -9,7 +9,7 @@
 
 .project-gif-wrapper {
   border: solid 3px var(--clr-cyan);
-  border-radius: 1%;
+  border-radius: 0.5%;
   padding: 2px;
   display: flex;
   justify-content: center;
@@ -39,6 +39,15 @@
   margin-bottom: 1.5rem;
 }
 
+.components-list {
+  display: flex;
+  /* font-weight: 700; */
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  gap: 1em;
+}
+
 .project-btn-wrapper {
   display: flex;
   align-items: center;
@@ -55,10 +64,6 @@
   .project {
     gap: 3rem;
     margin-top: 5rem;
-  }
-
-  .project-title {
-    margin-bottom: 1.5rem;
   }
   
   .project-description {
@@ -96,10 +101,6 @@
     gap: 4rem;
     margin-top: 7rem;
   }
-
-  .project-title {
-    margin-bottom: 2rem;
-  }
   
   .project-description {
     margin-bottom: 2.5rem;
@@ -111,10 +112,6 @@
   .project {
     gap: 4.5rem;
     margin-top: 8rem;
-  }
-
-  .project-title {
-    margin-bottom: 2.5rem;
   }
   
   .project-description {
@@ -135,10 +132,6 @@
     border-radius: 1%;
     padding: 2rem;
     max-width: 500px;
-  }
-
-  .project-title {
-    margin-bottom: 1.5rem;
   }
 
   .project-description {
