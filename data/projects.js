@@ -16,5 +16,11 @@ export const projects = [
     sourceLink: "https://github.com/ginItchimaru/chessBoard",
     components: []
   },
+  {
+    title: "Todolist Program",
+    paragraph: "???",
+    gif: "project3.gif",
+    sourceLink: "https://github.com/ginItchimaru/todo",
+    components: []
+  }
 ];
-

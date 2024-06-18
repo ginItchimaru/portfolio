@@ -12,6 +12,10 @@ export default function loadProject() {
     if (projectNum === '2') {
       generateHTML(projects[1]);
     }
+    
+    if (projectNum === '3') {
+      generateHTML(projects[2]);
+    }
   
     // console.log(projects[0].title, projects[0].paragraph,
     //   projects[0].gif, projects[0].sourceLink);
@@ -19,10 +23,10 @@ export default function loadProject() {
 }
 
 function generateListItemHTML(components) {
-  let listItems = ''; // Declare with 'let'
+  let listItems = '';
 
-  for (let i in components) { // Declare 'i' with 'let'
-    listItems += `<li class="components-list-item">${components[i]}</li>`; // Use 'listItems' correctly
+  for (let i in components) {
+    listItems += `<li class="components-list-item">${components[i]}</li>`;
   }
   
   return listItems;
