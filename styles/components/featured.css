@@ -136,6 +136,10 @@
 
 /* xl */
 @media (min-width: 1280px) {
+  .featured {
+    padding-left: 5rem;
+  }
+  
   .featured-subtitle {
     font-size: var(--size-xl);
   }
