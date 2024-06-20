@@ -16,6 +16,14 @@ export default function loadProject() {
     if (projectNum === '3') {
       generateHTML(projects[2]);
     }
+    
+    if (projectNum === '4') {
+      generateHTML(projects[3]);
+    }
+    
+    if (projectNum === '5') {
+      generateHTML(projects[4]);
+    }
   
     // console.log(projects[0].title, projects[0].paragraph,
     //   projects[0].gif, projects[0].sourceLink);
@@ -52,7 +60,7 @@ function generateHTML(project) {
           </p>
         </div>
         <div>
-          <h2 class="components-title project-title">Components / Languages</h2>
+          <h2 class="components-title project-title">Languages / Libraries</h2>
           <ul class="components-list">
             ${generateListItemHTML(components)}
           </ul>

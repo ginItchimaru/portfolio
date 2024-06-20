@@ -14,7 +14,7 @@ export const projects = [
       alot about various concepts, like memory management. ",
     gif: "project2.gif",
     sourceLink: "https://github.com/ginItchimaru/chessBoard",
-    components: []
+    components: ["Python,", "Pygame"]
   },
   {
     title: "Todolist Program",
@@ -22,5 +22,19 @@ export const projects = [
     gif: "project3.gif",
     sourceLink: "https://github.com/ginItchimaru/todo",
     components: []
-  }
+  },
+  {
+    title: "Key Repeater",
+    paragraph: "???",
+    gif: "project4.gif",
+    sourceLink: "https://github.com/ginItchimaru/afk_tool",
+    components: ["Python,", "PyAutoGUI,", "Thread-based parallelism,", "keyboard"]
+  },
+  {
+    title: "???????",
+    paragraph: "???",
+    gif: "project5.gif",
+    sourceLink: "https://github.com/ginItchimaru/rndmGame",
+    components: ["C++,", "SFML"]
+  },
 ];
