@@ -37,4 +37,11 @@ export const projects = [
     sourceLink: "https://github.com/ginItchimaru/rndmGame",
     components: ["C++,", "SFML"]
   },
+  {
+    title: "Portfolio Website",
+    paragraph: "???",
+    gif: "project6.gif",
+    sourceLink: "https://github.com/ginItchimaru/portfolio",
+    components: ["JavaScript,", "CSS,", "HTML,", "VITE"]
+  },
 ];
