@@ -42,6 +42,7 @@
 .components-list {
   display: flex;
   /* font-weight: 700; */
+  color: var(--clr-light);
   align-items: center;
   padding: 0;
   list-style: none;

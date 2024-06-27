@@ -10,22 +10,29 @@ export const projects = [
   },
   {
     title: "Virtual Chess Board",
-    paragraph: "sdfdsfdsfddssdfsdsfsdfsfdsf \
-      alot about various concepts, like memory management. ",
+    paragraph: "This project was my first run in with game development. \
+      It helped me get a deeper understanding of different programming concepts, \
+      like for example object oriented programming. I could have worked \
+      on this forever, but I wanted to finish it and move on to a new project.",
     gif: "project2.gif",
     sourceLink: "https://github.com/ginItchimaru/chessBoard",
     components: ["Python,", "Pygame"]
   },
   {
-    title: "Todolist Program",
-    paragraph: "???",
+    title: "List Systematizer",
+    paragraph: "I started this project with the intention of creating a to-do \
+      list where I could write down my tasks. It was my first exposure to a practical \
+      example of functional programming and writing really clean code that is easy to \
+      understand. In the end, it turned out to be more than just a to-do list program.",
     gif: "project3.gif",
-    sourceLink: "https://github.com/ginItchimaru/todo",
-    components: []
+    sourceLink: "https://github.com/ginItchimaru/list",
+    components: ["Python"]
   },
   {
     title: "Key Repeater",
-    paragraph: "???",
+    paragraph: "for this project I had to use the libraries PyAutoGUI and keyboard for \
+      the mouse and keyboard buttons. The hard part was stopping the program when the escape \
+      key was being pressed, for that I had to learn how to use the library threading.",
     gif: "project4.gif",
     sourceLink: "https://github.com/ginItchimaru/afk_tool",
     components: ["Python,", "PyAutoGUI,", "Thread-based parallelism,", "keyboard"]
@@ -43,5 +50,5 @@ export const projects = [
     gif: "project6.gif",
     sourceLink: "https://github.com/ginItchimaru/portfolio",
     components: ["JavaScript,", "CSS,", "HTML,", "VITE"]
-  },
+  }
 ];
