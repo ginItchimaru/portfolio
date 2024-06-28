@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     title: "Key Repeater",
-    paragraph: "for this project I had to use the libraries PyAutoGUI and keyboard for \
+    paragraph: "For this project I had to use the libraries PyAutoGUI and keyboard for \
       the mouse and keyboard buttons. The hard part was stopping the program when the escape \
       key was being pressed, for that I had to learn how to use the library threading.",
     gif: "project4.gif",
@@ -38,15 +38,10 @@ export const projects = [
     components: ["Python,", "PyAutoGUI,", "Thread-based parallelism,", "keyboard"]
   },
   {
-    title: "???????",
-    paragraph: "???",
-    gif: "project5.gif",
-    sourceLink: "https://github.com/ginItchimaru/rndmGame",
-    components: ["C++,", "SFML"]
-  },
-  {
     title: "Portfolio Website",
-    paragraph: "???",
+    paragraph: "Before building this website I already had plenty of experience \
+      working with html, css and javscript and building websites, but this was my \
+      first time creating a profesional website for personal use from scratch.",
     gif: "project6.gif",
     sourceLink: "https://github.com/ginItchimaru/portfolio",
     components: ["JavaScript,", "CSS,", "HTML,", "VITE"]

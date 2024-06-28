@@ -24,10 +24,6 @@ export default function loadProject() {
     if (projectNum === '5') {
       generateHTML(projects[4]);
     }
-    
-    if (projectNum === '6') {
-      generateHTML(projects[5]);
-    }
   
     // console.log(projects[0].title, projects[0].paragraph,
     //   projects[0].gif, projects[0].sourceLink);
