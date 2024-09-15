@@ -55,7 +55,6 @@
 .featured-info {
   font-size: var(--size-sm);
   color: var(--clr-green200);
-  text-transform: capitalize;
 }
 
 .featured-hr {

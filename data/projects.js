@@ -42,7 +42,7 @@ export const projects = [
     paragraph: "Before building this website I already had plenty of experience \
       working with html, css and javscript and building websites, but this was my \
       first time creating a profesional website for personal use from scratch.",
-    gif: "project6.gif",
+    gif: "project5.gif",
     sourceLink: "https://github.com/ginItchimaru/portfolio",
     components: ["JavaScript,", "CSS,", "HTML,", "VITE"]
   }
