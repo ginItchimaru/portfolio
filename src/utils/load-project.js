@@ -5,24 +5,11 @@ export default function loadProject() {
     const urlParams = new URLSearchParams(window.location.search);
     const projectNum = urlParams.get('project');
     
-    if (projectNum === '1') {
-      generateHTML(projects[0]);
-    }
+    if (projectNum) {
+      generateHTML(projects[projectNum - 1])
 
-    if (projectNum === '2') {
-      generateHTML(projects[1]);
-    }
-    
-    if (projectNum === '3') {
-      generateHTML(projects[2]);
-    }
-    
-    if (projectNum === '4') {
-      generateHTML(projects[3]);
-    }
-    
-    if (projectNum === '5') {
-      generateHTML(projects[4]);
+      // window.history.pushState({}, '', `/project/${projects[projectNum - 1].title}`);
+      window.history.pushState({}, '', `/project/${projectNum}`)
     }
   
     // console.log(projects[0].title, projects[0].paragraph,
