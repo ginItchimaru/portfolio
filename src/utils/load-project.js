@@ -9,7 +9,7 @@ export default function loadProject() {
       generateHTML(projects[projectNum - 1])
 
       // window.history.pushState({}, '', `/project/${projects[projectNum - 1].title}`);
-      window.history.pushState({}, '', `/project/${projectNum}`)
+      // window.history.pushState({}, '', `/project/${projectNum}`)
     }
   
     // console.log(projects[0].title, projects[0].paragraph,
