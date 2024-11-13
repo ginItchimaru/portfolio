@@ -28,12 +28,16 @@ function generateListItemHTML(components) {
 }
 
 function generateHTML(project) {
+  
   // Check if .js-project-container exists
   const container = document.querySelector('.js-project-container');
   if (!container) return; 
-
+  
   const { title, paragraph, gif, sourceLink, components } = project;
-
+  
+  // asign new title
+  document.title = title;
+  
   const projectsHTML = `
     <div class="js-project-container project container">
       <div class="project-gif-wrapper">
