@@ -51,9 +51,9 @@
               </svg>
             </button>
           </li>
-          <li>
+          <!-- <li>
             <a class="header-resume btn" href="#">Resume</a>
-          </li>
+          </li> -->
         </ul>
         <button aria-label="mobile nav button" class="header-bars js-bars">
           <svg
@@ -136,9 +136,9 @@
               </svg>
             </button>
           </li>
-          <li>
+          <!-- <li>
             <a class="mobile-nav-btn btn" href="#">Resume</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -147,7 +147,7 @@
       <section class="hero container">
         <img class="hero-img" src="/pfp.jpg" alt="" />
         <h2 class="hero-subtitle">I'm Lino Müller, I do</h2>
-        <h1 class="hero-title">Software /<br>Web Development</h1>
+        <h1 class="hero-title">Software &#183; Web &#183;<br>Game Development</h1>
         <p class="hero-description">
           I'm 21 years old from Switzerland. I thaught myself how to
           program and hack. I love working with computers and I love
@@ -176,8 +176,7 @@
             I went on to learn and practice cybersecurity.
             In the beginning I focused my attention on being able to spot and 
             exploit powerful vulnerabilities. Later I also spent some time 
-            with reverse engineering and cracking software, but I wouldn't call 
-            myself more than a beginner when it comes to this topic. 
+            with reverse engineering and cracking software.
           </p>
           <hr class="about-hr hr" />
         </div>
@@ -206,8 +205,8 @@
           </a>
         </div>
         <p class="featured-description">
-          I started self studying programming and cybersecurity 3 years ago. Heres a few 
-          things I learned and worked with.
+          3 years ago I started self studying programming and cybersecurity. Heres a few 
+          things I've learned and worked with.
         </p>
         <div class="featured-info-container">
           <div>
@@ -245,18 +244,18 @@
       <section id="work" class="work container section">
         <h2 class="work-title">Work</h2>
         <p class="work-description">
-          Here in the Work section im presenting some of my favorite coding projects.
+          Here are some of my favorite projects.
         </p>
         <div class="work-container">
-          <!-- Project 1 -->
-          <h3 class="work-project-title">Aim Training Game</h3>
+          <!-- Project 1 | Aim Practice Game -->
+          <h3 class="work-project-title">Aim Practice Game</h3>
           <a class="js-project1" href="project.html?project=1">
             <div class="work-img-wrapper work-image1">
               <img
               class="work-img lazy loading"
               src="https://fakeimg.pl/900"
-              data-src="/project1.png"
-              alt="Aim Training Game"
+              data-src="/aimPracticeGame.png"
+              alt="Aim Practice Game"
               />
             </div>
           </a>
@@ -266,22 +265,25 @@
               A game to train your aim and mouse skills.
             </p>
             <p class="work-project-description2">
-              In this game you destroy planets by clicking on them with your mouse.
-              When starting the game the mouse cursor will be hidden. Instead there's a 
-              crosshair in the middle of the screen, when moving the mouse the background
-              and the planets move in the oposite direction, while the crosshair stays in 
-              the middle of the screen. That way it creates the illusion of being able to 
-              look around in the game.
+              In this game, you destroy planets by clicking on them with the mouse. 
+              When the game starts, a crosshair appears in the center of the screen, 
+              and the mouse cursor is hidden. You move the crosshair by moving the mouse. 
+              There's an option to toggle fullscreen mode by pressing the 'f' key. 
+              The game generally has two modes. When the window is small and not 
+              maximized, the planets are close to each other, requiring minimal 
+              mouse movement to hit them. In fullscreen mode, the planets are 
+              farther apart, requiring more mouse movement to hit them. You can 
+              close the game by pressing the 'ESCAPE' key
             </p>
           </div>
-          <!-- Project 2 -->
+          <!-- Project 2 | Virtual Chessboard -->
           <h3 class="work-project-title">Virtual Chessboard</h3>
           <a class="js-project2" href="project.html?project=2">
             <div class="work-img-wrapper work-image2">
               <img
               class="work-img lazy loading"
               src="https://fakeimg.pl/900"
-              data-src="/project2.png"
+              data-src="/virtualChessboard.png"
               alt="Virtual Chessboard"
               />
             </div>
@@ -293,125 +295,132 @@
               a physical wooden chessboard.
             </p>
             <p class="work-project-description2">
-              I made this so I could replay chess positions I saw in a match or encountered 
-              in my own games. It can also be used to play chess against a friend. 
-              For example: If you're traveling and didn't bring a chessboard. Another use 
-              could be playing with someone via chat or email, where you send and 
-              receive moves in written form like 'e4, e5.' In that case, you can 
-              now replay the moves on the virtual chessboard and review them instead 
-              of having to visualize them in your head.
+              I made this virtual chessboard to help me replay chess 
+              positions from matches I've watched or games I've played. 
+              It's also useful for playing chess with a friend, 
+              especially in situations where a physical chessboard 
+              isn't available, like when traveling. Another way to 
+              use it is for playing chess remotely, such as through 
+              chat or email, where moves are sent in written form 
+              (e.g., 'e4, e5'). Instead of trying to visualize the 
+              moves in your head, you can use the virtual chessboard 
+              to replay and review them.
             </p>
-            
           </div>
-          <!-- Project 3 -->
-          <h3 class="work-project-title">List Systematizer</h3>
+          <!-- project 3 | Web Fuzzer -->
+          <h3 class="work-project-title">Web Fuzzer</h3>
           <a class="js-project3" href="project.html?project=3">
             <div class="work-img-wrapper work-image3">
-              <img
+              <img 
               class="work-img lazy loading" 
               src="https://fakeimg.pl/900"
-              data-src="/project3.png"
-              alt="List Systematizer"
+              data-src="/webFuzzer.png" 
+              alt="Portfolio Website"
               />
             </div>
           </a>
           <div class="work-project work-content3">
+            <h3 class="work-project-subtitle">Web Fuzzer</h3>
+            <p class="work-project-description1">
+              A powerful fuzzer to discover vulnerabilities across all kinds of webservices.
+            </p>
+            <p class="work-project-description2">
+              This fuzzer is run by executing a command in the terminal. The execution can 
+              be customized for individual demands by adding flags to the command. Currently, 
+              this fuzzer has two fuzzing modes. For the default option, you provide a 
+              URL and a wordlist file. The fuzzer will then fuzz the wordlist at the 
+              end of the URL. The second option is to specifically fuzz for backup files on webservers. 
+              This option is available by adding the '-bf' flag. With the '-sD' and '-sI' 
+              flags, the speed can be decreased or increased for lighter or heavier scans, 
+              depending on the target's environment. You can also add the '-v' flag for extra 
+              verbosity.
+            </p>
+          </div>
+          <!-- Project 4 | List Systematizer -->
+          <h3 class="work-project-title">List Systematizer</h3>
+          <a class="js-project4" href="project.html?project=4">
+            <div class="work-img-wrapper work-image4">
+              <img
+              class="work-img lazy loading" 
+              src="https://fakeimg.pl/900"
+              data-src="/listSystematizer.png"
+              alt="List Systematizer"
+              />
+            </div>
+          </a>
+          <div class="work-project work-content4">
             <h3 class="work-project-subtitle">List Systematizer</h3>
             <p class="work-project-description1">
               This is a program for the console to write and organize all kinds of lists, 
               like to-do lists for example.
             </p>
             <p class="work-project-description2">
-              The program starts off by creating the deafult text file called "list.txt". 
-              You are then able to change the list or create a new one. There are a couple of
-              commands: 'Write' to enter write mode and write to the list, 'delete' to enter 
-              delete mode where you can type the number of the line you want to delete 
-              or type clear to delete everything from the list, display to display the list, 
-              change to change the list and lastly i/info to display info about the 
-              commands.
+              The program starts by creating a default text file called list.txt. 
+              You can either modify this file or create a new one. There are a couple of
+              commands: Write: Enter write mode to add items to the list.
+              Delete: Enter delete mode to remove items. You can either specify the line number to delete or type clear to delete everything.
+              Display: View the current list.
+              Change: Switch to a different list file.
+              Info (i): Display information about all available commands.
             </p>
           </div>
-          <!-- Project 4 -->
+          <!-- Project 5 | Key Repeater -->
           <h3 class="work-project-title">Key Repeater</h3>
-          <a class="js-project4" href="project.html?project=4">
-            <div class="work-img-wrapper work-image4">
+          <a class="js-project5" href="project.html?project=5">
+            <div class="work-img-wrapper work-image5">
               <img 
               class="work-img lazy loading" 
               src="https://fakeimg.pl/900"
-              data-src="/project4.png" 
+              data-src="/keyRepeater.png" 
               alt="Key Repeater"
               />
             </div>
           </a>
-          <div class="work-project work-content4">
+          <div class="work-project work-content5">
             <h3 class="work-project-subtitle">Key Repeater</h3>
             <p class="work-project-description1">
               A program that repeats any key or mouse button.
             </p>
             <p class="work-project-description2">
-              I created this program to use it for AFK Farming in video games. In Some
-              games where you have to farm a lot of recources like in mincraft for example, 
-              often times it's useful to use a technique called AFK(Away From Keyboard) Farming. 
-              This means that you build a farm or go to a spot where you can stand still 
-              without moving and all you have to do is press a key or the mouse button 
-              repeatedly to farm recources in the game. That way you don't have to sit
-              infront of the screen the whole time and can do other stuff like eating
-              or going out, while still leveling up in the game.
+              I created this program to assist with AFK (Away From Keyboard) 
+              farming in video games. In some games, like Minecraft, where 
+              farming resources can be time-consuming, AFK farming is a useful 
+              technique. This involves building a farm or finding a spot where 
+              you can stand still without moving, and all you need to do is press 
+              a key or mouse button repeatedly to gather resources. With this program, 
+              you don't have to sit in front of the screen the entire time. Instead, 
+              you can do other tasks, like eating or going out, while still 
+              progressing in the game.
             </p>
           </div>
-          <!-- Project 5 -->
+          <!-- Project 6 | Portfolio Website -->
           <h3 class="work-project-title">Portfolio Website</h3>
-          <a class="js-project5" href="project.html?project=5">
-            <div class="work-img-wrapper work-image5">
+          <a class="js-project6" href="project.html?project=6">
+            <div class="work-img-wrapper work-image6">
               <img
               class="work-img lazy loading"
               src="https://fakeimg.pl/900" 
-              data-src="/project5.png" 
+              data-src="/portfolioWebsite.png" 
               alt="Portfolio Website" 
               />
             </div>
           </a>
-          <div class="work-project work-content5">
+          <div class="work-project work-content6">
             <h3 class="work-project-subtitle">Portfolio Website</h3>
             <p class="work-project-description1">
               The last project I want to showcase is this website right here.
             </p>
             <p class="work-project-description2">
-              This website has a couple of features. It's built for mobile first with
-              a bars menu, it has the option to change the layout to white mode and 
-              there's the option to take a closer look at the individual projects
-              in a new tab. If you click on the image of the project, a gif showing a usecase
-              of that project, a paragraph describing any challanges I faced or things I've 
-              learned working on it and a link to the source code will open up.m
+              This website includes several features. It's designed with a 
+              mobile-first approach, featuring a bars menu for easy navigation. 
+              It also offers a white mode option for changing the layout. 
+              Additionally, you can explore individual projects in more detail by 
+              opening them in a separate tab. When you click on a project's image, 
+              a GIF demonstrating its use case, a paragraph describing challenges 
+              I faced or lessons I learned while working on it, and a link to the 
+              source code will be displayed.
             </p>
           </div>
-          <!-- Project 6 -->
-          <!-- <h3 class="work-project-title">Portfolio Website</h3>
-          <a class="js-project6" href="project.html?project=6">
-            <div class="work-img-wrapper work-image6">
-              <img 
-              class="work-img lazy loading" 
-              src="https://fakeimg.pl/900"
-              data-src="/project6.png" 
-              alt="Portfolio Website"
-              />
-            </div>
-          </a>
-          <div class="work-project work-content6">
-            <h3 class="work-project-subtitle">Portfolio Websitet</h3>
-            <p class="work-project-description1">
-              serious fight he ties his bandana,
-              normally tied on the arm, on his head
-              one katana in each hand
-            </p>
-            <p class="work-project-description2">
-              who fights with his own unique sword style
-              known as santoryu (three katana fighting style).
-              This is achieved by using one katana in each hand
-              and another in his mouth. He is also seen
-              fighting with only one or two swords. When in 
-            </p>
-          </div> -->
         </div>
       </section>
       <section id="contact" class="contact container section">

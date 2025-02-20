@@ -10,7 +10,7 @@
 .work-description {
   max-width: 60ch;
   font-size: var(--size-sm);
-  color: var(--clr-green200);
+  /* color: var(--clr-green400); */
   margin: 1rem auto 2rem auto;
 }
 
@@ -82,7 +82,7 @@
   
   .work-description {
     font-size: var(--size-base);
-    margin: 1.5rem auto 2.5rem auto;
+    margin: 1.5rem auto 3rem auto;
   }
 
   .work-project-title {

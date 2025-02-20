@@ -35,7 +35,7 @@ function generateHTML(project) {
   
   const { title, paragraph, gif, sourceLink, components } = project;
   
-  // asign new title
+  // asign title
   document.title = title;
   
   const projectsHTML = `
