@@ -11,7 +11,7 @@
   max-width: 60ch;
   font-size: var(--size-sm);
   /* color: var(--clr-green400); */
-  margin: 1rem auto 2rem auto;
+  margin: 1rem auto 2.5rem auto;
 }
 
 .work-project-title {
@@ -179,6 +179,7 @@
   
   .work-project-description2 {
     font-size: var(--size-xs);
+    margin-top: auto;
   }
 
   .work-project:not(:last-child) {

@@ -66,7 +66,6 @@
 /* xl */
 @media (min-width: 1280px) {
   .about-content {
-    gap: 2rem;
     margin-top: 5.5rem;
   }
 
