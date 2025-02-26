@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Aim Practice Game",
     paragraph: "For this project I had to dive deep into C++ and learn \
-      alot about librarys like SFML and various concepts like memory management, \
+      alot about librarys like SFML and a variety of new concepts like memory management, \
       animation, fullscreen mode, game textures, pointers and references.",
     gif: "/aimPracticeGame.gif",
     sourceLink: "https://github.com/ginItchimaru/aimTrainer",
@@ -11,9 +11,10 @@ export const projects = [
   {
     title: "Virtual Chessboard",
     paragraph: "This project was my first run in with game development. \
-      It helped me get a deeper understanding of different programming concepts, \
-      like for example object oriented programming. I could have worked \
-      on this forever, but I wanted to finish it and move on to a new project.",
+      It helped me get a deeper understanding of programming. \
+      I suddenly had to learn the use of object oriented programming. \
+      I could have added much more functionality, but I wanted \
+      to move on to other projects.",
     gif: "/virtualChessboard.gif",
     sourceLink: "https://github.com/ginItchimaru/chessBoard",
     components: ["Python,", "Pygame"]
@@ -23,9 +24,9 @@ export const projects = [
     paragraph: "Fuzzing is essential for web hacking, after using countless\
       of fuzzing tools, I decided to make my own. At the beginning I wasn't sure\
       what pragramming language I should use, it was between python, go and c++, but\
-      but ultimatly i decided to use c++ for performace reasons. My biggest challenge\
+      ultimatly i decided to use c++ for performace reasons. My biggest challenge\
       was the use of the curl library in c++, before starting this\
-      project I had never even heard of 'multi-cURL.",
+      project I had never even heard of 'multi-cURL'.",
     gif: "/webFuzzer.gif",
     sourceLink: "https://github.com/ginItchimaru/fuzzer",
     components: ["C++, cURL"]
@@ -42,18 +43,18 @@ export const projects = [
   },
   {
     title: "Key Repeater",
-    paragraph: "For this project I had to use the libraries PyAutoGUI and keyboard for \
+    paragraph: "For this project I had to use the libraries 'PyAutoGUI' and 'keyboard' for \
       the mouse and keyboard buttons. The hard part was stopping the program when the escape \
-      key was being pressed, for that I had to learn how to use the library threading.",
+      key was being pressed, for that I had to learn how to use the library 'threading'.",
     gif: "/keyRepeater.gif",
     sourceLink: "https://github.com/ginItchimaru/afk_tool",
     components: ["Python,", "PyAutoGUI,", "Thread-based parallelism,", "keyboard"]
   },
   {
     title: "Portfolio Website",
-    paragraph: "Before building this website I already had plenty of experience \
-      working with html, css and javscript and building websites, but this was my \
-      first time creating a profesional website for personal use from scratch.",
+    paragraph: "Before making this website I already had plenty of experience \
+      building websites, but this was my \
+      first time creating a profesional website from scratch.",
     gif: "/portfolioWebsite.gif",
     sourceLink: "https://github.com/ginItchimaru/portfolio",
     components: ["JavaScript,", "CSS,", "HTML,", "VITE"]
