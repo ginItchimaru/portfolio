@@ -25,4 +25,5 @@ dist-ssr
 
 notes.txt
 mal-script.js
-
+vercel.json
+api/log.js
